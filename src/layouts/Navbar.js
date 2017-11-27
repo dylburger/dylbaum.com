@@ -11,7 +11,7 @@ const Navbar = () => (
         display: 'block',
         textAlign: 'center',
       }}>
-      <NavbarLink to="/" title="ABOUT US" />
+      <NavbarLink to="/about" title="ABOUT US" />
       &nbsp;&nbsp;&nbsp;
       <NavbarLink to="/schedule" title="SCHEDULE" />
       &nbsp;&nbsp;&nbsp;

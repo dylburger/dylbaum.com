@@ -6,9 +6,12 @@ const NavbarLink = ({to, title}) => (
   <Link
     to={to}
     style={{
-      color: 'black',
+      color: '#001f3f',
       textDecoration: 'none',
       fontSize: '13px',
+    }}
+    activeStyle={{
+      color: '#D95E39',
     }}>
     {title}
   </Link>

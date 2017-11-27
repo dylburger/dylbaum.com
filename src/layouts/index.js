@@ -5,6 +5,8 @@ import Helmet from 'react-helmet';
 
 import Navbar from './Navbar';
 
+import 'typeface-euphoria-script';
+import 'typeface-dancing-script';
 import './index.css';
 
 const Header = () => (
@@ -20,6 +22,17 @@ const Header = () => (
         padding: '1.45rem 1.0875rem',
       }}>
       <Navbar />
+      <br />
+      <hr
+        style={{
+          display: 'block',
+          width: '70%',
+          textAlign: 'center',
+          borderTop: '1px solid #D95E39',
+          height: '1px',
+          margin: '0 auto',
+        }}
+      />
     </div>
   </div>
 );
