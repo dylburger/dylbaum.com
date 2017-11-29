@@ -9,6 +9,7 @@ const NavbarLink = ({to, title}) => (
       color: '#001f3f',
       textDecoration: 'none',
       fontSize: '13px',
+      overflowWrap: 'normal',
     }}
     activeStyle={{
       color: '#D95E39',
