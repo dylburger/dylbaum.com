@@ -1,9 +1,9 @@
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
+import addTileLayerToMap from '../utils/map/addTileLayerToMap';
 import config from '../utils/config';
 import fixLeafletIcons from '../utils/map/fixLeafletIcons';
-import addTileLayerToMap from '../utils/map/addTileLayerToMap';
 
 const generateVenueMap = () => {
   fixLeafletIcons();
