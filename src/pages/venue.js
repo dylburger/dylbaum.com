@@ -2,11 +2,12 @@ import React from 'react';
 import Link from 'gatsby-link';
 
 import config from '../utils/config';
+import PageTitle from './PageTitle';
 import VenueMap from './VenueMap';
 
 const Venue = () => (
   <div>
-    <h1>Venue</h1>
+    <PageTitle title="Venue" />
     <p>
       The ceremony and reception will be held at{' '}
       <a href={config.venue.webAddr}>{config.venue.title}</a>.

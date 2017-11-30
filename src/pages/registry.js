@@ -1,9 +1,11 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
+import PageTitle from './PageTitle';
+
 const Registry = () => (
   <div>
-    <h1>Registry</h1>
+    <PageTitle title="Registry" />
   </div>
 );
 
