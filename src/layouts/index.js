@@ -4,6 +4,7 @@ import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 
 import Navbar from './Navbar';
+import config from '../utils/config';
 
 import 'typeface-euphoria-script';
 import 'typeface-dancing-script';
@@ -12,7 +13,7 @@ import './index.css';
 const Header = () => (
   <div
     style={{
-      background: '#f8f8f8',
+      background: config.site.backgroundColor,
       marginBottom: '1.45rem',
     }}>
     <div
@@ -28,7 +29,7 @@ const Header = () => (
           display: 'block',
           width: '70%',
           textAlign: 'center',
-          borderTop: '1px solid #D95E39',
+          borderTop: '1px solid ' + config.site.navColor,
           height: '1px',
           margin: '0 auto',
         }}
@@ -37,32 +38,34 @@ const Header = () => (
   </div>
 );
 
-const TemplateWrapper = ({children}) => (
-  <div>
-    <Helmet
-      title="dylbaum.com"
-      meta={[
-        {
-          name: 'description',
-          content: 'Lauren Birnbaum and Dylan Sather wedding website',
-        },
-        {name: 'keywords', content: 'Lauren Birnbaum, Dylan Sather, wedding'},
-      ]}
-    />
-    <Header />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-        display: 'block',
-        textAlign: 'center',
-      }}>
-      {children()}
+const TemplateWrapper = ({children}) => {
+  return (
+    <div>
+      <Helmet
+        title={config.site.title}
+        meta={[
+          {
+            name: 'description',
+            content: config.site.description,
+          },
+          {name: 'keywords', content: config.site.keywords},
+        ]}
+      />
+      <Header />
+      <div
+        style={{
+          margin: '0 auto',
+          maxWidth: 960,
+          padding: '0px 1.0875rem 1.45rem',
+          paddingTop: 0,
+          display: 'block',
+          textAlign: 'center',
+        }}>
+        {children()}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,

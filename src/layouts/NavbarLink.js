@@ -2,17 +2,20 @@ import React from 'react';
 import {string} from 'prop-types';
 import Link from 'gatsby-link';
 
+import config from '../utils/config';
+
 const NavbarLink = ({to, title}) => (
   <Link
     to={to}
     style={{
-      color: '#001f3f',
+      color: config.site.textColor,
       textDecoration: 'none',
       fontSize: '13px',
       overflowWrap: 'normal',
+      marginRight: '12px',
     }}
     activeStyle={{
-      color: '#D95E39',
+      color: config.site.navColor,
     }}>
     {title}
   </Link>

@@ -3,6 +3,13 @@ import Link from 'gatsby-link';
 
 import NavbarLink from './NavbarLink';
 
+import config from '../utils/config';
+
+const generateNavbar = navArray =>
+  navArray.map(section => (
+    <NavbarLink key={section.title} to={section.link} title={section.title} />
+  ));
+
 const Navbar = () => (
   <div className="navbar">
     <h1
@@ -11,17 +18,7 @@ const Navbar = () => (
         display: 'block',
         textAlign: 'center',
       }}>
-      <NavbarLink to="/about" title="ABOUT US" />
-      &nbsp;&nbsp;&nbsp;
-      <NavbarLink to="/schedule" title="SCHEDULE" />
-      &nbsp;&nbsp;&nbsp;
-      <NavbarLink to="/hotels" title="HOTELS" />
-      &nbsp;&nbsp;&nbsp;
-      <NavbarLink to="/sonoma" title="SONOMA" />
-      &nbsp;&nbsp;&nbsp;
-      <NavbarLink to="/venue" title="VENUE" />
-      &nbsp;&nbsp;&nbsp;
-      <NavbarLink to="/registry" title="REGISTRY" />
+      {generateNavbar(config.navBarLinks)}
     </h1>
   </div>
 );
