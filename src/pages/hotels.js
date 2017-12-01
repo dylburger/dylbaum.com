@@ -9,7 +9,7 @@ const Hotels = () => (
     <p>Hotel information coming soon!</p>
     <p>
       If you&rsquo;re planning to stay in the area before or after the wedding,{' '}
-      <a href={config.surroundingArea.airbnbLink}>Airbnb</a> is a great option!
+      <a href={config.surroundingArea.airbnbLink}>Airbnb</a> is a great option.
     </p>
   </div>
 );

@@ -9,7 +9,7 @@ const Sonoma = () => (
     <PageTitle title={config.surroundingArea.name} />
     <p>
       If you have time, visit some of our favorite places in{' '}
-      {config.surroundingArea.name}!
+      {config.surroundingArea.name}.
     </p>
     <SurroundingAreaMap />
   </div>
