@@ -3,9 +3,6 @@ import Link from 'gatsby-link';
 
 import config from '../utils/config';
 
-import bridePic from '../../public/static/bridePic.png';
-import groomPic from '../../public/static/groomPic.png';
-
 const Home = () => (
   <div>
     <br />
@@ -39,8 +36,8 @@ const Home = () => (
       }}>
       {config.wedding.location}
     </p>
-    <img src={bridePic} alt={config.personalInfo.bride} />
-    <img src={groomPic} alt={config.personalInfo.groom} />
+    <img src={config.img.bridePic} alt={config.personalInfo.bride} />
+    <img src={config.img.groomPic} alt={config.personalInfo.groom} />
   </div>
 );
 
