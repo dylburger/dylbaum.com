@@ -13,6 +13,7 @@ const Home = () => (
       style={{
         fontFamily: "'Euphoria Script', cursive",
         fontSize: '80px',
+        fontWeight: 'bold',
         color: config.site.textColor,
       }}>
       {config.personalInfo.bride + ' & ' + config.personalInfo.groom}
