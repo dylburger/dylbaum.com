@@ -14,33 +14,17 @@ const Schedule = () => (
     </h4>
     <p>
       <strong>
-        {config.rehearsalDinner.startTime} - {config.rehearsalDinner.endTime}
+        {config.welcomeParty.startTime + ' - ' + config.welcomeParty.endTime}
       </strong>
       <br />
       <span
         style={{
           fontStyle: 'italic',
         }}>
-        Rehearsal Dinner
+        Welcome Party
       </span>
       <br />
-      {config.rehearsalDinner.location}
-    </p>
-    <p>
-      <strong>
-        {config.postRehearsalParty.startTime +
-          ' - ' +
-          config.postRehearsalParty.endTime}
-      </strong>
-      <br />
-      <span
-        style={{
-          fontStyle: 'italic',
-        }}>
-        Post-Rehearsal Dinner Party
-      </span>
-      <br />
-      {config.postRehearsalParty.location}
+      {config.welcomeParty.location}
     </p>
     <br />
     <h4
