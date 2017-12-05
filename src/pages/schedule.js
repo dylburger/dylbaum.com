@@ -10,7 +10,7 @@ const Schedule = () => (
       style={{
         textDecoration: 'underline',
       }}>
-      {config.rehearsalDinner.date}
+      {config.welcomeParty.date}
     </h4>
     <p>
       <strong>
