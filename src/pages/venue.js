@@ -16,6 +16,7 @@ const Venue = () => (
       Directions to the venue can be found on{' '}
       <a href={config.venue.googleMapsLink}>Google Maps</a>.
     </p>
+    <p>{config.venue.drivingNotes}</p>
     <VenueMap />
   </div>
 );
