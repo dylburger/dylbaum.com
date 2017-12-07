@@ -38,6 +38,7 @@ const Home = () => (
     </p>
     <img src={config.img.bridePic} alt={config.personalInfo.bride} />
     <img src={config.img.groomPic} alt={config.personalInfo.groom} />
+    {config.personalInfo.description}
   </div>
 );
 
