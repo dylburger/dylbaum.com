@@ -7,7 +7,7 @@ import PageTitle from './PageTitle';
 const generateRegistryLinks = () =>
   config.registries.map(registry => {
     return (
-      <div>
+      <div key={registry.name}>
         <a key={registry.name} href={registry.link}>
           <img src={registry.img} alt={registry.name} />
         </a>
