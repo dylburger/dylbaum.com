@@ -14,7 +14,7 @@ class VenueMap extends React.Component {
         id="venuemap"
         style={{
           height: '400px',
-          width: '600px',
+          width: '60vw',
           position: 'relative',
           display: 'block',
           align: 'center',

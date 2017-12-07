@@ -14,7 +14,7 @@ class SurroundingAreaMap extends React.Component {
         id="surrounding-area-map"
         style={{
           height: '400px',
-          width: '600px',
+          width: '60vw',
           position: 'relative',
           display: 'block',
           align: 'center',
