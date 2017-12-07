@@ -14,7 +14,7 @@ First, you'll need to install the packages required for the website. From the ro
 
     npm i
 
-Most of the website is built from config (a Javascript object), found in
+Most of the website is built using a configuration file (a Javascript object), found in
 
     src/utils/config.js
 
