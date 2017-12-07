@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
-  "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "name": "gatsby-wedding-website",
+  "description": "Wedding website, built from Gatsby default starter",
+  "version": "0.1.0",
+  "author": "Dylan Sather <dylan.sather@gmail.com>",
   "dependencies": {
     "gatsby": "^1.9.119",
     "gatsby-link": "^1.6.28",
@@ -13,7 +13,8 @@
     "typeface-ubuntu": "0.0.44"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "wedding",
   ],
   "license": "MIT",
   "main": "n/a",
