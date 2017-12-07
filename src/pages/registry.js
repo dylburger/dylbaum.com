@@ -20,10 +20,7 @@ const generateRegistryLinks = () =>
 const Registry = () => (
   <div>
     <PageTitle title="Registry" />
-    <p>
-      We are registered at the below stores / sites. Please click on the logos
-      to visit our registries.
-    </p>
+    <p>Please click on the logos below to visit our registries</p>
     {generateRegistryLinks()}
   </div>
 );
