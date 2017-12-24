@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
-import AirportMap from '../components/AirportMap';
 import config from '../utils/config';
 import PageTitle from '../components/PageTitle';
 
@@ -42,7 +41,6 @@ const TravelAccommodations = () => (
       Travel
     </h4>
     {generateAirportDescription(config.travel.airports)}
-    <AirportMap />
     <br />
     <br />
     <h4

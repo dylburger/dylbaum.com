@@ -3,7 +3,6 @@ import Link from 'gatsby-link';
 
 import config from '../utils/config';
 import PageTitle from '../components/PageTitle';
-import VenueMap from '../components/VenueMap';
 
 const Venue = () => (
   <div>
@@ -17,7 +16,6 @@ const Venue = () => (
       <a href={config.venue.googleMapsLink}>Google Maps</a>.
     </p>
     <p>{config.venue.drivingNotes}</p>
-    <VenueMap />
   </div>
 );
 
