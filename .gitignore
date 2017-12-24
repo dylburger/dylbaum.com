@@ -8,3 +8,4 @@ public/
 yarn-error.log
 src/utils/config.js
 src/utils/config.js.bak
+deploy-prod.sh
