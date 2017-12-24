@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import config from '../utils/config';
-import PageTitle from './PageTitle';
-import SurroundingAreaMap from './SurroundingAreaMap';
+import PageTitle from '../components/PageTitle';
+import SurroundingAreaMap from '../components/SurroundingAreaMap';
 
 const Sonoma = () => (
   <div>
