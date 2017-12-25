@@ -29,7 +29,11 @@ const generateListOfAirports = arrayOfAirports =>
   ));
 
 const generateListOfHotels = arrayOfHotels =>
-  arrayOfHotels.map(hotel => <li key={hotel}>{hotel}</li>);
+  arrayOfHotels.map(hotel => (
+    <li key={hotel.title}>
+      <a href={hotel.link}>{hotel.title}</a>
+    </li>
+  ));
 
 const TravelAccommodations = () => (
   <div>
