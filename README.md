@@ -7,6 +7,10 @@ Contains a basic template for a wedding website. Built using
 
 These libraries make building websites easy and fun. I am incredibly grateful to the developers who contribute to them.
 
+I manage the infrastructure on on AWS, using [this Cloudformation template](https://github.com/dylburger/wedding-website-cloudformation-templates). This includes an S3 bucket to host the website, a Cloudfront distribution to serve the content faster, and DNS entries in Route53.
+
+I created the SSL certificate using AWS Certificate Manager, with [this script](https://github.com/dylburger/create-and-validate-acm-certificate).
+
 # How to build your own website from this template
 
 First, you'll need to install the packages required for the website. From the root of the repo, run
