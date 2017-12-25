@@ -100,7 +100,7 @@ const config = {
   ],
   venue: {
     title: 'The White House',
-    mapZoomLevel: 8,
+    physicalAddr: '1600 Pennsylvania Ave NW, Washington, DC',
     webAddr: 'https://www.whitehouse.gov/',
     googleMapsLink:
       'https://www.google.com/maps/place/The+White+House,+1600+Pennsylvania+Ave+NW,+Washington,+DC+20500/@38.8976094,-77.0389236,17z/data=!3m2!4b1!5s0x89b7b7bce16040c9:0xb825fcec8d0b4d30!4m5!3m4!1s0x89b7b7bce1485b19:0x9fc7bf09fd5d9daf!8m2!3d38.8976633!4d-77.0365739',
@@ -109,7 +109,16 @@ const config = {
   hotel: {
     title: 'Oxford Suites',
     blockDescription: 'Hotel block information coming soon.',
-    listOfHotelsInArea: ['This is a fake hotel', 'Another fake hotel'],
+    listOfHotelsInArea: [
+      {
+        title: 'This is a fake hotel',
+        link: 'link here',
+      },
+      {
+        title: 'Another fake hotel',
+        link: 'another link here',
+      },
+    ],
   },
   surroundingArea: {
     name: 'Washington D.C.',

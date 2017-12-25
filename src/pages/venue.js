@@ -9,8 +9,9 @@ const Venue = () => (
     <PageTitle title="Venue" />
     <p>
       The ceremony and reception will be held at{' '}
-      <a href={config.venue.webAddr}>{config.venue.title}</a>.
+      <a href={config.venue.webAddr}>{config.venue.title}</a>:
     </p>
+    <p>{config.venue.physicalAddr}</p>
     <p>
       Directions to the venue can be found on{' '}
       <a href={config.venue.googleMapsLink}>Google Maps</a>.
