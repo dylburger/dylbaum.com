@@ -12,6 +12,7 @@ const Home = () => (
         fontSize: '80px',
         fontWeight: 'bold',
         color: config.site.textColor,
+        lineHeight: '1em',
       }}>
       {config.personalInfo.bride + ' & ' + config.personalInfo.groom}
     </span>
